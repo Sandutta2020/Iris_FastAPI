@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Flower Prediction FAST API</title>
+</head>
+<body>
+<h2> Iris Flower Prediction </h3>
+<form action="/render" method="post" >
+<table> <tr> <td>
+	<label for="sepal_length">Sepal Length :</label> </td>
+    <td><input type="double" name="sepal_length" value="{{ sepal_length }}" /></td></tr>
+	<tr><td><label for="sepal_width">Sepal Width:</label> </td>
+	<td><input type="float" name="sepal_width" value="{{ sepal_width }}" /><br></td></tr>
+	<tr><td><label for="petal_length">Petal Length:</label> </td>
+	<td><input type="float" name="petal_length"value="{{ petal_length }}" /><br></td></tr>
+	<tr><td><label for="petal_width">Petal Width:</label> </td>
+	<td><input type="float" name="petal_width" value="{{ petal_width }}" /></td></tr>
+<tr><td><input type="submit"></td></tr>
+</table>
+</form>
+<p>Result: {{ Res }}</p>
+</body>
+</html>
